@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Interests </title>
+        <link rel="stylesheet" type="text/css" href="style3.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    </head>
+    <body>
+        <nav>
+        <a href="Exam2.html" class="logoName">Kristel</a>
+        <ul>
+            <li><a href="Exam2.html" class="active"> Home</a></li>
+            <li><a href="section1.html" >About</a></li>
+            <li><a href="section2.html" >Introduction</a></li>
+            <li><a href="section3.html" >Education</a></li>
+            <li><a href="section4.html" >Interests</a></li>
+            <li><a href="section5.html" >Interested?</a></li>
+
+        </ul>
+    </nav>
+    <p style="background-image: url ('https://i.pinimg.com/originals/86/7c/bb/867cbbb513ba1fd140088622e1e47a9f.png');">
+        <style>
+            body {
+              background-image: url('https://i.pinimg.com/originals/86/7c/bb/867cbbb513ba1fd140088622e1e47a9f.png');
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: cover;
+            }
+            </style>
+
+        <div class="main">
+            <div class="slider">
+                <img src="https://i.pinimg.com/originals/c4/b9/48/c4b948f11065fa240ee24542b2790717.jpg" alt="image1">
+                <div class="btn">
+                <button onclick="back()"><i class='bx bx-chevron-left'></i></button>
+                <button onclick="next()"><i class='bx bx-chevron-right'></i></button>
+            </div>
+
+            </div>
+        </div>
+
+    <script>
+        var maining= document.querySelector("img");
+        var images=["https://i.pinimg.com/originals/c4/b9/48/c4b948f11065fa240ee24542b2790717.jpg", "https://i.pinimg.com/originals/40/3c/bf/403cbfedd8ea7e5e8a3f9faa97119eba.jpg","https://i.pinimg.com/originals/4d/7a/b4/4d7ab471e36bc86e668c60857500a998.png", "https://i.pinimg.com/originals/10/8d/4a/108d4af5dc9198746661f8c1c050b564.jpg"];
+        var num=0;
+
+        function next(){
+            num++;
+            if(num>=images.length){
+                num=0;
+                maining.src=images[num]
+            }else{
+                maining.src=images[num]
+            }
+        };
+    </script>
+
+</body>
+</html>
